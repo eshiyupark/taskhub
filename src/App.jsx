@@ -46,6 +46,7 @@ export default function App() {
       </form>
       <h1 className="header">Task List</h1>
       <ul className="list">
+        {todos.length === 0 && "No tasks yet"}
         {todos.map(todo => {
           return (
             <li key={todo.id}>
